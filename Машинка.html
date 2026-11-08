@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<meta charset="UTF-8">
+<head>
+<style>
+.tf-run:hover .tf-dot {
+    left: calc(100% - 31px);
+}
+.tf-run .t1 {
+    transition: left 1.6s linear;
+}
+.tf-dot {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 50px;
+    height: 50px;
+    background: #FF0000;
+}
+.wheel {
+    position: absolute;
+    bottom: -6px; 
+    width: 14px; 
+    height: 14px;
+    background: #000000; 
+    border-radius: 50% !important; 
+}
+
+.w-left {
+    left: 4px;
+}
+
+.w-right {
+    right: 4px;   
+}
+.blue-box {
+    position: absolute;
+    top: 0px; 
+    right: 0px; 
+    width: 25px; 
+    height: 25px;
+    background: #B3F2FF; 
+}
+* {
+    box-sizing: border-box;
+    border-radius: 0 !important;
+}
+user agent stylesheet
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #7DEBFF;
+    color: #00006E;
+    margin: 0;
+    line-height: 10;
+}
+</style>
+</head>
+<body>
+<main>
+<div class="tf-run">
+                        <div class="tf-track">
+                            <div class="tf-dot t1">
+								<div class="blue-box"></div>
+								<div class="wheel w-left"></div>
+								<div class="wheel w-right"></div>
+							</div>
+							</div>
+                        <div class="tf-label">*</div>
+						</div>
+</main>
+</body>
+</html>
